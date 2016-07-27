@@ -1,0 +1,7 @@
+<a href="{{ .Permalink }}" class="list-group-item">
+	<div class="list-group-heading text-muted">{{ .Title }}</div>
+	<time class="list-group-item-text text-grey">
+		{{ with .Site.Params.DateForm }}{{ $.Date.Format . }}
+		{{ else }}{{ $.Date.Format "Mon, Jan 2, 2006" }}{{ end }}
+	</time>
+</a>

@@ -1,0 +1,23 @@
+
+{{ partial "header_before.html" . }}
+{{ partial "header_after.html" . }}
+
+<div class="container">
+	<div class="row">
+		<div class="col-lg-9 col-md-12">
+			<div class="row">
+				{{ range $key, $value := .Paginator.Pages }}
+				<div class="col-sm-6">
+					{{ .Render "grid" }}
+				</div>
+				{{ end }}
+			</div>
+			{{ partial "pagination.html" . }}
+		</div>
+		<div class="col-md-3 hidden-md-down">
+			{{ partial "sidebar.html" . }}
+		</div>
+	</div>
+</div>
+
+{{ partial "footer.html" . }}

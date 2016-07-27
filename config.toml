@@ -1,0 +1,14 @@
+name = "my-blog"
+license = "MIT"
+baseurl = "http://weilinshi.org/"
+languageCode = "en-us"
+title = "石威林的个人博客"
+description = "Weilin Shi's personal blog"
+homepage = "http://weilinshi.org/"
+tags = ["blog"]
+features = ["blog"]
+min_version = 0.15
+
+[Params]
+  Author = "石威林"
+  homepage = "http://weilinshi.org/"

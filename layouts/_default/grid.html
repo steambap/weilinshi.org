@@ -1,0 +1,15 @@
+<div class="card p-b-3 m-b-3" href="{{ .Permalink }}">
+	<div class="card-block">
+		<h3 class="card-title underline">{{ .Title }}</h3>
+		<p class="summary card-text text-grey">
+			{{ .Summary }}
+		</p>
+		<div class="p-t-2">
+			<time class="text-grey pull-xs-right">
+				{{ with .Site.Params.DateForm }}{{ $.Date.Format . }}
+				{{ else }}{{ $.Date.Format "Mon, Jan 2, 2006" }}{{ end }}
+			</time>
+		<a href="{{ .Permalink }}" class="card-link">阅读全文</a>
+		</div>
+	</div>
+</div>

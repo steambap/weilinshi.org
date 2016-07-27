@@ -1,0 +1,39 @@
+<aside class="site">
+
+	{{ if ne (len .Site.Menus) 0 }}
+	<section>
+		<header>Menu</header>
+		<div>
+			<nav class="p-menu">
+				{{ range .Site.Menus }}
+				<ul>
+					{{ range . }}
+					<li>
+						{{ if .HasChildren }}
+						<a href="#">{{ .Pre }} {{ .Name }}</a>
+						<ul>
+							{{ range .Children }}
+							<li><a href="{{ .URL }}">{{ .Name }}</a></li>
+							{{ end }}
+						</ul>
+					</li>
+					{{ else }}
+					<li><a href="{{ .URL }}">{{ .Pre }} {{ .Name }}</a></li>
+					{{ end }}
+					{{end}}
+				</ul>
+				{{end}}
+			</nav>
+		</div>
+	</section>
+	{{ end }}
+
+	<section>
+		<header class="text-muted p-y-2 m-l-2 m-b-1">Latest Posts</header>
+		<div class="list-group m-l-1">
+			{{ range first 3 .Site.Pages }}
+			{{ .Render "li" }}
+			{{ end }}
+		</div>
+	</section>
+</aside>
