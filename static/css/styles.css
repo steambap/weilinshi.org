@@ -3,6 +3,7 @@
  */
 body {
 	font-family: 'Helvetica Neue', Helvetica, Arial, 'Microsoft Yahei', sans-serif;
+	color: #555;
 }
 .card {
 	border: none;
@@ -91,8 +92,11 @@ footer.footer {
 	padding: .5rem;
 	margin-left: 1rem;
 	border-left: 2px solid #999;
+	border-bottom: 1px solid #aaa;
+	background-color: #f0eed8;
 }
 .md blockquote p {
+	color: #454a4a;
 	margin-bottom: 0;
 }
 
@@ -146,4 +150,9 @@ footer.footer {
 	font-family: "Consolas", monospace;
 	overflow: auto;
 	max-width: 100%;
+	background-color: #dadeee;
+	border-left: 2px solid #69c;
+	border-bottom: 1px solid #ccc;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
 }
