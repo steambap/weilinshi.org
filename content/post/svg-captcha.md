@@ -14,7 +14,8 @@ image = "svg-captcha.png"
 
 项目地址：[https://github.com/steambap/svg-captcha](https://github.com/steambap/svg-captcha)
 
-安装方法：
+安装方法：  
+
 > npm i --save svg-captcha
 
 使用方法

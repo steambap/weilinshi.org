@@ -91,10 +91,9 @@ footer.footer {
 }
 .md blockquote {
 	padding: .5rem;
-	margin-left: 1rem;
-	border-left: 2px solid #999;
+	border-left: 2px solid #69c;
 	border-bottom: 1px solid #aaa;
-	background-color: #f0eed8;
+	background-color: #dadeee;
 }
 .md blockquote p {
 	color: #454a4a;
