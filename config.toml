@@ -1,15 +1,30 @@
 name = "my-blog"
 license = "MIT"
 baseurl = "http://weilinshi.org/"
-languageCode = "en-us"
+languageCode = "zh-cn"
 title = "石威林的个人博客"
 description = "Weilin Shi's personal blog"
 homepage = "http://weilinshi.org/"
 tags = ["blog"]
 features = ["blog"]
-min_version = 0.15
+min_version = 0.17
+DefaultContentLanguage = "zh"
+hasCJKLanguage = true
 
 [Params]
   Author = "石威林"
   homepage = "http://weilinshi.org/"
   GoogleAnalyticsUserID = "UA-84878330-1"
+
+[Languages]
+[Languages.zh]
+  title = "石威林的博客"
+  description = "石威林的个人博客"
+[Languages.zh.Params]
+  Author = "石威林"
+
+[Languages.en]
+  title = "Weilin's blog"
+  description = "Weilin Shi's personal blog"
+[Languages.en.Params]
+  Author = "Weilin Shi"

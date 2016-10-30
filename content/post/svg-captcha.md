@@ -12,7 +12,7 @@ image = "svg-captcha.png"
 
 在经过了一定的实验后，我发现可以生成svg格式的验证码，不需要依赖任何c++模块。
 
-项目地址：[https://github.com/steambap/svg-captcha](https://github.com/steambap/svg-captcha)
+项目地址：[https://github.com/lemonce/svg-captcha](https://github.com/lemonce/svg-captcha)
 
 安装方法：  
 
