@@ -1,11 +1,11 @@
 <div class="container">
 	<nav class="navbar header">
-		<a href="/" class="navbar-brand">
+		<a href="{{.LanguagePrefix }}" class="navbar-brand">
 			{{ .Site.Title }}
 		</a>
 		<ul class="nav navbar-nav pull-xs-right">
 			<li class="nav-item">
-				<a href="{{ .Site.BaseURL }}" class="nav-link">blog</a>
+				<a href="{{ .Site.BaseURL }}{{.LanguagePrefix }}" class="nav-link">blog</a>
 			</li>
 			<li class="nav-item">
 				<a href="/about/" class="nav-link">about</a>

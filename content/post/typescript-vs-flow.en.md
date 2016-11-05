@@ -2,6 +2,7 @@
 date = "2016-10-30T11:40:57+08:00"
 title = "Typescript vs Flow"
 draft = false
+image = "ts-flow.png"
 
 +++
 
