@@ -122,8 +122,7 @@ footer.footer {
 }
 .sublemon-line-comment,
 .sublemon-block-comment {
-	opacity: .5;
-	font-style: italic;
+	color: #29ab04;
 }
 .sublemon-macro {
 }
