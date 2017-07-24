@@ -11,6 +11,3 @@ title = "Hello world"
 [github](https://github.com/steambap)
 
 我的博客是用 [hugo](https://gohugo.io) 生成的。
-
-## 为什么使用 Hugo?
-Hugo 是一个静态页面生成工具，使用 go 语言编写，运行速度大大超过 Node.js 和 php 等语言的同类竞争对手如 hexo 。
