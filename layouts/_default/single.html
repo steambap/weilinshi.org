@@ -46,10 +46,12 @@
 		<div class="col-md-9">
 
 			<article class="card">
+				{{ if .Params.image }}
 				<img 
-					src="{{ $.Site.BaseURL }}images/{{ with .Params.image }}{{ . }}{{ else }}default.jpg{{ end }}"
+					src="{{ $.Site.BaseURL }}images/{{ .Params.image }}"
 					alt="header image"
 					class="img-fluid m-b-3">
+				{{ end }}
 				<div class="card-block">
 					<h2 class="card-title underline">{{ .Title }}</h2>
 				</div>
