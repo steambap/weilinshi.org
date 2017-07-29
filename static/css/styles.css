@@ -82,12 +82,11 @@ footer.footer {
 .md h2,
 .md h3,
 .md h4 {
-	color: #232323;
-	padding-top: 1.5rem;
-	padding-bottom: 1.5rem;
-}
-.md p {
-	color: #999;
+	color: white;
+	background-color: #333;
+	display: inline-block;
+	margin-top: 1.5rem;
+	margin-bottom: 1.5rem;
 }
 .md blockquote {
 	padding: .5rem;
