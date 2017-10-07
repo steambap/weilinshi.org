@@ -19,10 +19,11 @@ image = "svg-captcha.png"
 > npm i --save svg-captcha
 
 使用方法
-```Javascript
+
+{{< highlight JavaScript >}}
 var svgCaptcha = require('svg-captcha');
 // 生成由4个字符的随机字符串
 var text = svgCaptcha.randomText();
 // 由随机字符串生成svg格式验证码
 var captcha = svgCaptcha(text);
-```
+{{< /highlight >}}

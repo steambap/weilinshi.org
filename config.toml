@@ -10,6 +10,7 @@ features = ["blog"]
 min_version = 0.17
 DefaultContentLanguage = "zh"
 hasCJKLanguage = true
+pygmentsStyle = "tango"
 
 [Params]
   Author = "石威林"

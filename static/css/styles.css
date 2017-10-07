@@ -4,7 +4,6 @@
 body {
 	font-family: 'Helvetica Neue', Helvetica, Arial, 'Microsoft Yahei', sans-serif;
 	color: #555;
-	/*background-color: #f2f3f5;*/
 }
 .card {
 	border: none;
@@ -99,58 +98,6 @@ footer.footer {
 	margin-bottom: 0;
 }
 
-/* syntax highlight */
-.sublemon-keyword {
-	opacity: .5;
-}
-.sublemon-name {
-	color: #694017;
-}
-.sublemon-operator {
-	opacity: .5;
-}
-.sublemon-regexp {
-	color: #3380cc;
-}
-.sublemon-string,
-.sublemon-template {
-	color: #2d70b3;
-}
-.sublemon-number {
-	color: #3380cc;
-}
-.sublemon-line-comment,
-.sublemon-block-comment {
-	color: #29ab04;
-}
-.sublemon-macro {
-}
-.sublemon-gutter {
-	display: table-cell;
-}
-.sublemon-code {
-	display: table-cell;
-}
-.sublemon-line-number {
-	text-align: right;
-	padding: 0 1em;
-}
-.sublemon-view-line {
-	white-space: pre;
-}
-.sublemon-view-line.highlight {
-	background-color: rgba(0,50,99,.1);
-}
-.sublemon-wrap-inner {
-	display: table-row;
-}
-.sublemon-wrap {
-	font-family: "Consolas", monospace;
-	overflow: auto;
-	max-width: 100%;
-	background-color: #dadeee;
-	border-left: 2px solid #69c;
-	border-bottom: 1px solid #ccc;
-	padding-top: 1rem;
-	padding-bottom: 1rem;
+.highlight > pre {
+	padding: .5rem;
 }

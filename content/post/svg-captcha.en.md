@@ -18,10 +18,11 @@ Install：
 > npm i --save svg-captcha
 
 Usage:
-```Javascript
+
+{{< highlight JavaScript >}}
 var svgCaptcha = require('svg-captcha');
 // generate random text of length 4
 var text = svgCaptcha.randomText();
 // generate svg image
 var captcha = svgCaptcha(text);
-```
+{{< /highlight >}}

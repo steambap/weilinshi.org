@@ -16,12 +16,12 @@ title = "消除游戏"
 
 所以我的游戏入口设置是这样的：  
 
-```JavaScript
+{{< highlight JavaScript >}}
 const game = new Phaser.Game(options.width, options.height);
 
 game.state.add('InGame', InGame);
 game.state.start('InGame');
-```
+{{< /highlight >}}
 
 我的游戏只有一个 in game 游戏状态，这里会有所有的游戏逻辑。
 
@@ -29,7 +29,7 @@ game.state.start('InGame');
 
 首先是构造器，这里面会有我们要用到的状态，比较重要的是以下几个：
 
-```JavaScript
+{{< highlight JavaScript >}}
 class InGame {
 	constructor() {
 		// 是否允许用户点击
@@ -42,14 +42,14 @@ class InGame {
 		this.tilePool = [];
 	}
 }
-```
+{{< /highlight >}}
 
 有了这些状态之后，我们就可以预加载图片并且在画面上显示所有的方块了。  
 预加载的代码我先省略掉。  
 
 主要看 InGame 游戏状态的create方法
 
-```JavaScript
+{{< highlight JavaScript >}}
 class InGame {
 	preload() {
 		// 预加载代码
@@ -95,7 +95,7 @@ class InGame {
 		return theTile;
 	}
 }
-```
+{{< /highlight >}}
 
 这个 opts 定量里面有设定游戏有多少行和列，  
 所以 createLv 方法先遍历行，再遍历列，然后对对应的行和列添加方块  
@@ -111,7 +111,7 @@ makeTile 方法会生成对应的方块并添加到游戏当中
 
 所以，我们需要对用户的点击操作进行处理：
 
-```JavaScript
+{{< highlight JavaScript >}}
 class InGame {
 	createLv() {
 		// 遍历添加方块的代码省略
@@ -148,7 +148,7 @@ class InGame {
 		}
 	}
 }
-```
+{{< /highlight >}}
 
 当用户点击鼠标左键时，会触发回调 pickTile 函数，具体逻辑在注释中有。  
 
@@ -160,7 +160,7 @@ class InGame {
 
 那就来看看 floodFill 是如何递归的：
 
-```JavaScript
+{{< highlight JavaScript >}}
 class InGame {
 	floodFill(point, color, fillArr) {
 		const {x, y} = point;
@@ -186,7 +186,7 @@ class InGame {
 		return arr.some(myPoint => myPoint.equals(point));
 	}
 }
-```
+{{< /highlight >}}
 
 这个函数有3个参数，第一个是初始点，第二个是初始颜色，第三个是受影响的点的数组。  
 
@@ -202,7 +202,7 @@ class InGame {
 在 Phaser 官方的教程中，如果你碰到了一个星星，你就使用 kill 方法移除那个星星的 sprite  
 但那不一定是最好的选择，来看我是如果移除方块的：
 
-```JavaScript
+{{< highlight JavaScript >}}
 class InGame {
 	destroyTiles(tileList) {
 		// 禁止用户在动画中点击方块
@@ -224,7 +224,7 @@ class InGame {
 		});
 	}
 }
-```
+{{< /highlight >}}
 
 当动画完成后，执行 fillHoles 回调函数，并用重复利用池中的方块。  
 
