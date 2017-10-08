@@ -5,6 +5,8 @@ title = "Hello world"
 
 +++
 
+![me](/images/me-160.png)
+
 My name is **Weilin**.  
 
 I write javascript, css, and html at work. I also design web pages.  

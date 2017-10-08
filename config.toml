@@ -15,7 +15,6 @@ pygmentsStyle = "tango"
 [Params]
   Author = "石威林"
   homepage = "http://weilinshi.org/"
-  GoogleAnalyticsUserID = "UA-84878330-1"
 
 [Languages]
 [Languages.zh]
