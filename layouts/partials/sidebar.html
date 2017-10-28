@@ -29,8 +29,8 @@
 	{{ end }}
 
 	<section>
-		<header class="text-muted p-y-2 m-l-2 m-b-1">Latest Posts</header>
-		<div class="list-group m-l-1">
+		<header class="py-2 ml-2 mb-1">Latest Posts</header>
+		<div class="list-group">
 			{{ range first 3 .Site.Pages }}
 			{{ .Render "li" }}
 			{{ end }}
