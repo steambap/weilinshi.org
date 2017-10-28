@@ -1,5 +1,5 @@
 +++
-title = "移除 Javascript"
+title = "移除 JavaScript"
 date = 2017-10-07T18:18:05+08:00
 draft = false
 +++
