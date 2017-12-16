@@ -97,6 +97,10 @@ footer.footer {
 	margin-bottom: 0;
 }
 
+.md img {
+	max-width: 100%;
+}
+
 .highlight > pre {
 	padding: .5rem;
 }
