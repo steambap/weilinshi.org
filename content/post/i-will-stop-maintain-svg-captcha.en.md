@@ -13,7 +13,7 @@ As you can see, I've put a lot of effort in maintain the repo, as well as reply 
 
 Since I no longer works at Lemonce, I've lost the access to the repo.
 
-[Li Chao](https://github.com/lichaozhy) will take over the maintaince of the library. You can email him: lichao@or-change.cn . By the way, he is a great programmer from Tianjin University.
+[Li Chao](https://github.com/lichaozhy) will take over the maintaince of the library. You can email him: lichao@or-change.cn .
 
 ## What happened actually?
 
