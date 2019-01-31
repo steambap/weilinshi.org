@@ -6,6 +6,10 @@ image = "ts-flow.png"
 
 +++
 
+_Update 2019-01-30_
+
+More than two years have passed since I wrote this. Right now the Typescript had grown a lot since then. I honestly think Typescript is a better choice today.
+
 ## My experience with Typescript and Flow
 When it comes to type safety in Javascript projects, we have two choices
  available: Typescript and Flow.  
