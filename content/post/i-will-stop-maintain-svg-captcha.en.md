@@ -4,9 +4,13 @@ date = 2017-12-16T16:29:00+08:00
 draft = false
 +++
 
+## Update March 2020
+
+They don't bother to answer issues or manage pull requests, fuck them.
+
 ## What?
 
-I'm the former maintainer of Node.js open source captcha generation library `svg-captcha`
+I'm the former maintainer of Node.js open source captcha generation library `svg-captcha`.
 
 As you can see, I've put a lot of effort in maintain the repo, as well as reply issues and merge pull requests.
 ![contrib](/images/svg-captcha-contrib.png)
